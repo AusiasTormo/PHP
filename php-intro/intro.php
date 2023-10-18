@@ -8,7 +8,9 @@
 <body>
     <h1>Primer uso de php</h1>
     <?php 
-    //Comentarios en PHP 
+    //Comentarios en PHP
+    echo 'Hola caracola';
+     
     ?>
 </body>
 </html>
