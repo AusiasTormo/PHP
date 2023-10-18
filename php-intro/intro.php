@@ -35,6 +35,20 @@
     
     
     ?>
+    <h2>Condicional con switch</h2>
+    <?php
+    $resultado = 'C';
+    switch ($resultado) {
+        case 'A':
+            echo '<h3 style="color:green">Prueba superada fantastico</h3>';
+            break;
+        case 'B':
+            echo '<h3 style="color:blue">Prueba superada fantastico</h3>';
+            break;  
+        case 'C':
+        
+        }
 
+    ?>
 </body>
 </html>
