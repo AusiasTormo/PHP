@@ -81,6 +81,77 @@
             echo "$letra <br>";
         }
         echo "<br>";
+
+
+        
+    ?>
+    <h2>sort - array_reverse</h2>
+
+    <?php
+    //ordena en orden alfabético
+        $array=array("x", "f", "e", "g", "b");
+        sort($array);
+        
+        foreach($array as $letra){
+            echo "$letra <br>";
+        }
+        echo "<br>";
+
+//ordena en orden inverso
+        $reverse=array_reverse($array);
+        foreach($reverse as $letra){
+            echo "$letra <br>";
+        }
+        echo "<br>";
+
+    ?>
+    <h2>array_unique</h2>
+
+    <?php
+    
+    $array=array("x", "f", "e", "b", "g", "b", "e");
+    $unico=array_unique($array);
+    
+    foreach($unico as $letra){
+        echo "$letra <br>";
+    }
+    echo "<br>";
+
+    
+    ?>
+    <h2>array_search</h2>
+    <?php
+    //realiza una busqueda y devuelve el índice
+        $array=array("x", "f", "e", "b", "g", "b", "e");
+
+        $index=array_search("e", $array);
+
+        echo "<br> $index <br>";
+
+        $index=array_search("b", $array);
+
+        echo "<br> $index <br>";
+
+        //con en indice buscamos la letra dentro del array 
+        echo $array [$index];
+    ?>
+    <h2>in_array</h2>
+    <?php
+    $array=array("x", "f", "e", "b", "g", "b", "e");
+    $existe=in_array("x", $array);
+//var_dump sirve para mostar el codigo interno de php
+    var_dump($existe);
+    echo "<br>$existe<br>";
+    ?>
+
+    <h2>array_key_exists</h2>
+
+    <?php
+        $edades = array("Ana"=>25, "Luis"=>35, "Pepe"=>23);
+        $existe=array_key_exists("Ana", $edades);
+
+        var_dump($existe);
+        echo "<br>$existe<br>"
     ?>
 </body>
 </html>

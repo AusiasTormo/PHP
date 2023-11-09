@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Practica</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Resultados</a></li>
+            </ul>
+            <div id="formlogin">
+                <form action="loginpractica.php" method="post">
+                    
+                        <label for="user">Usuario</label>
+                        <input type="text" name="user" id="user" placeholder="Aquí tu usuario">
+
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" placeholder="Aqui tu contraseña">
+
+                        <input class="boton" type="submit" value="Entrar">
+                </form>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
