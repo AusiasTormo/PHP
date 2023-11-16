@@ -8,7 +8,7 @@
 <body>
     <?php
 
-    include "funcionsumar.php";
+    include "libreriasumar.php";
     suma(5,6);
 
     ?>
