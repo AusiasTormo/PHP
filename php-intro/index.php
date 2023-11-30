@@ -17,6 +17,9 @@
     <li><a href="libreriasumar.php">Librería PHP</a></li>
     <li><a href="fechas.php">Fechas</a></li>
     <li><a href="textos.php">Funciones con textos PHP</a></li>
+    <li><a href="conexion/conexion.php">Conexión PHP</a></li>
+    <li><a href="conexion/usuarios.php">Usuarios PHP</a></li>
+    <li><a href="conexion/formulario.php">Formulario PHP</a></li>
 </ul>
 </body>
 </html>
