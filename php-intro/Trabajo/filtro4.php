@@ -2,36 +2,25 @@
 include 'header.php';
 ?>
 <?php
- 
 include_once 'conexion.php';
- 
-$sql_read = 'SELECT email, pc_number, ip_address FROM users where first_name like "Lynett" and last_name like "Bodell"';
- 
-$gsent= $pdo -> prepare ($sql_read);
-$gsent-> execute();
- 
- 
-$resultado = $gsent -> fetchAll();
- 
-// var_dump ($resultado);
 
 ?>
-<h1 class="row justify-content-center" >DATOS Lynett Bodell</h1>
+
 <div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6">
-            <ul class="list-group">
-                <?php foreach ($resultado as $dato): ?>
-                    <li class="list-group-item list-group-item-info">
-                        <span class="text-muted">Email:</span> <?php echo $dato['email']; ?><br>
-                        <span class="text-muted">PC Number:</span> <?php echo $dato['pc_number']; ?><br>
-                        <span class="text-muted">IP Address:</span> <?php echo $dato['ip_address']; ?>
-                    </li>
-                <?php endforeach ?>
-            </ul>
-        </div>
-    </div>
-</div>
+            <div class="row">
+                <div class="col-md-6">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+    <form method="POST" action="resufiltro4.php">
+  <div class="mb-3">
+    <label for="exampleInputEmail1"
+    class="form-label">IP</label>
+    <input type="text" class="form-control" name="ip">
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Buscar</button>
+</form>
+
 <?php
 include 'footer.php';
 ?>

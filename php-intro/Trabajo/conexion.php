@@ -1,8 +1,8 @@
 <?php
 
-$link = 'mysql:host=localhost; dbname=trabajo';
-$usuario = 'web';
-$pass = 'Campus123';
+$link = 'mysql:host=sql209.infinityfree.com; dbname=if0_35079883_asir2_ausias';
+$usuario = 'if0_35079883';
+$pass = 't3QIOid3crNDv';
 
 try{
 $pdo = new PDO($link, $usuario, $pass);
